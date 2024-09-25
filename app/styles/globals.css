@@ -118,6 +118,5 @@ header:hover>* {
 }
 
 .avatar {
-    background-image: url("../../public/avatar/ava.jpg");
-
+    background-color: black;
 }

@@ -16,6 +16,6 @@ function LeftCard() {
 
 function Avatar() {
     return (
-        <div className="avatar h-max w-max"></div>
+        <div className="avatar h-24 w-24"></div>
     )
 }
