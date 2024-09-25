@@ -1,5 +1,5 @@
 "use client";
-import FrontPageComponentSet from "@/components/frontpage-components";
+import FrontPageComponentSet from "@/components/content-components/frontpage-components";
 import { Page } from "@/components/whole-page-export";
 
 export default function MainPage() {
