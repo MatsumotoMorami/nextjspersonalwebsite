@@ -1,5 +1,4 @@
 "use client";
-
 import FrontPageComponentSet from "@/components/frontpage-components";
 import { Page } from "@/components/whole-page-export";
 

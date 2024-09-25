@@ -3,11 +3,11 @@ import { Dispatch, MouseEventHandler, ReactNode, SetStateAction } from "react";
 
 function NavigatorText({ text, onClick, path }: { text: string, onClick: MouseEventHandler<HTMLDivElement>, path: string }) {
     return (
-        <Link href={path}>
+        <a href={path}>
             <header className="flex flex-row text-gray-400 items-center lg:p-2 p-0 w-full">
                 <div className="font-bold cursor-pointer lg:text-[1rem] md:text-sm text-[0.6rem] headerTextAnimation" onClick={onClick}>{text}</div>
             </header>
-        </Link>
+        </a>
     );
 }
 
@@ -27,7 +27,7 @@ export function Header({ setIsMute, isMute, haveVolumeControl }: { setIsMute: Di
                     <div className="font-bold lg:p-3 sm:p-1.5 p-0 lg:text-2xl md:text-lg sm:text-sm text-[0rem] text-gray-300 duration-100" onClick={nameOnClick}>Morami</div>
                 </div>
                 <div className="ml-auto flex space-x-4 place-items-center">
-                    <NavigatorText text="首页" onClick={mainPageOnClick} path="/" />
+                    <NavigatorText text="首页" onClick={mainPageOnClick} path='/' />
                     <NavigatorText text="简介" onClick={introOnClick} path='/intro' />
                     <NavigatorText text="博客" onClick={blogOnClick} path='/blog' />
                     <NavigatorText text="项目" onClick={projOnClick} path='/proj' />

@@ -1,5 +1,5 @@
 "use client";
-import FrontPageComponentSet from "@/components/content-components/frontpage-components";
+import IntroPageComponentSet from "@/components/content-components/intropage-components";
 import { Page } from "@/components/whole-page-export";
 
 export default function MainPage() {
@@ -7,7 +7,7 @@ export default function MainPage() {
     return (
         <>
             <Page showVideo={false} showBgPictures={true}>
-                <FrontPageComponentSet></FrontPageComponentSet>
+                <IntroPageComponentSet></IntroPageComponentSet>
             </Page>
         </>
     );
