@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "AaYuanWeiTuSi-2";
+    src: url("/fonts/AaYuanWeiTuSi-2.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.headerTextAnimation:hover {
+    animation: headerTextMovingAnimation 0.5s ease-out infinite alternate, headerTextColorAnimation 0.3s ease-out both;
+}
+
+@keyframes headerTextMovingAnimation {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-8%);
+    }
+}
+
+@keyframes headerTextColorAnimation {
+    100% {
+        color: rgb(240, 240, 240);
+        text-shadow: 1px 1px 1px rgb(61, 61, 61)
+    }
+}
+
+.card-bg {
+    background-color: rgba(102, 255, 230, 0.822)
+}
+
+.bg-color {
+    background-image: linear-gradient(to top, #30cfd0 0%, #6213c2 100%);
+}
+
+.Header-extra:hover {
+    box-shadow: 5px 10px 10px black;
+}
+
+.container {
+    /* 投影效果 */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+.title {
+    color: rgb(98, 206, 227);
+    /* 字间距 */
+    letter-spacing: 15px;
+    /* 转大写 */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 76px;
+    outline: none;
+    /* 自定义属性--c，可通过var函数对其调用 */
+    --c: lightseagreen;
+    /* 调用自定义属性--c，设置文字阴影（发光效果） */
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
+    /* 执行动画：动画名 时长 线性的 无限次播放 */
+    animation: animate 5s linear infinite;
+}
+
+.intro {
+    color: rgb(98, 206, 227);
+    /* 字间距 */
+    letter-spacing: 15px;
+    /* 转大写 */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 76px;
+    outline: none;
+    /* 自定义属性--c，可通过var函数对其调用 */
+    --c: lightseagreen;
+    /* 调用自定义属性--c，设置文字阴影（发光效果） */
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
+    /* 执行动画：动画名 时长 线性的 无限次播放 */
+}
+
+/* 定义动画 */
+@keyframes animate {
+    to {
+        /* 色相旋转滤镜（设置度数可改变颜色） */
+        filter: hue-rotate(360deg);
+    }
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    /* 隐藏溢出的内容 */
+}
+
+header>* {
+    /* 选择 header 的直接子元素 */
+    position: relative;
+    /* 保证子元素定位的参考点 */
+    top: -200%;
+    /* 初始状态向上隐藏 */
+    transition: top 0.3s ease;
+    /* 添加过渡效果 */
+}
+
+header:hover>* {
+    top: 0;
+    /* 鼠标悬停时恢复原位 */
+}
