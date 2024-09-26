@@ -88,6 +88,21 @@
     /* 执行动画：动画名 时长 线性的 无限次播放 */
 }
 
+.introtext {
+    color: rgb(98, 206, 227);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    outline: none;
+    --c: lightseagreen;
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
+}
+
 /* 定义动画 */
 @keyframes animate {
     to {
@@ -117,6 +132,11 @@ header:hover>* {
     /* 鼠标悬停时恢复原位 */
 }
 
-.avatar {
-    background-color: black;
+.ipcs {
+    display: grid;
+    grid-template-areas: "a b";
+}
+
+.introduction-title {
+    line-height: 110px;
 }

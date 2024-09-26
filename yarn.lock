@@ -114,10 +114,10 @@
   dependencies:
     glob "10.3.10"
 
-"@next/swc-win32-x64-msvc@14.2.8":
+"@next/swc-darwin-arm64@14.2.8":
   version "14.2.8"
-  resolved "https://repo.huaweicloud.com/repository/npm/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.2.8.tgz"
-  integrity sha512-EnPKv0ttq02E9/1KZ/8Dn7kuutv6hy1CKc0HlNcvzOQcm4/SQtvfws5gY0zrG9tuupd3HfC2L/zcTrnBhpjTuQ==
+  resolved "https://repo.huaweicloud.com/repository/npm/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.2.8.tgz"
+  integrity sha512-1VrQlG8OzdyvvGZhGJFnaNE2P10Jjy/2FopnqbY0nSa/gr8If3iINxvOEW3cmVeoAYkmW0RsBazQecA2dBFOSw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2802,6 +2802,11 @@ yaml@^2.3.4:
   version "2.5.1"
   resolved "https://repo.huaweicloud.com/repository/npm/yaml/-/yaml-2.5.1.tgz"
   integrity sha512-bLQOjaX/ADgQ20isPJRvF0iRUHIxVhYvr53Of7wGcWlO2jvtUlH5m87DsmulFVxRpNLOnI4tB6p/oh8D7kpn9Q==
+
+yarn@^1.22.22:
+  version "1.22.22"
+  resolved "https://mirrors.cloud.tencent.com/npm/yarn/-/yarn-1.22.22.tgz"
+  integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
