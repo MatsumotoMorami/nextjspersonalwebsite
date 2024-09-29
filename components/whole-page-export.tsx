@@ -7,8 +7,8 @@ export function Page({ showVideo, showBgPictures, children }: { showVideo: boole
     return (
         <>
             {children}
-            <div className="flex w-full relative">
-                <div className="absolute top-0 left-0 w-full flex flex-col">
+            <div className="flex w-[100vw] h-full relative">
+                <div className=" top-0 left-0 w-[100vw] h-full flex flex-col">
                     <Background isMute={isMute} visible={showVideo ? showBgPictures ? "p" : "v" : "c"} />
                     <Header setIsMute={setIsMute} isMute={isMute} haveVolumeControl={showVideo} />
                 </div>

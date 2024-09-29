@@ -35,7 +35,23 @@
 }
 
 .bg-color {
-    background-image: linear-gradient(to top, #30cfd0 0%, #6213c2 100%);
+    background-image: linear-gradient(to right, #209393, #8239da, #209393);
+    /* 蓝色-紫色-蓝色 */
+    background-size: 1000% 100%;
+    /* 关键：设置足够大的渐变尺寸 */
+    animation: gradient-loop 30s linear infinite;
+    /* 动画控制位置变化 */
+}
+
+@keyframes gradient-loop {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: -500% 0%;
+        /* 关键：移动渐变位置 */
+    }
 }
 
 .Header-extra:hover {
@@ -51,6 +67,27 @@
     color: rgb(98, 206, 227);
     /* 字间距 */
     letter-spacing: 15px;
+    /* 转大写 */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 76px;
+    outline: none;
+    /* 自定义属性--c，可通过var函数对其调用 */
+    --c: lightseagreen;
+    /* 调用自定义属性--c，设置文字阴影（发光效果） */
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
+    /* 执行动画：动画名 时长 线性的 无限次播放 */
+    animation: animate 5s linear infinite;
+}
+
+.titletext {
+    color: rgb(98, 206, 227);
+    /* 字间距 */
+    letter-spacing: 5px;
     /* 转大写 */
     text-transform: uppercase;
     text-align: center;
@@ -139,4 +176,9 @@ header:hover>* {
 
 .introduction-title {
     line-height: 110px;
+}
+
+.blogCard {
+    display: grid;
+    grid-template-areas: "a a a b";
 }
