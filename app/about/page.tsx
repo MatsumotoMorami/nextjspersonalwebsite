@@ -6,7 +6,7 @@ export default function MainPage() {
 
     return (
         <>
-            <Page showVideo={false} showBgPictures={true}>
+            <Page showVideo={false} showBgPictures={true} hoverVisible={false} >
                 <FrontPageComponentSet></FrontPageComponentSet>
             </Page>
         </>

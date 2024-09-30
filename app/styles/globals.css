@@ -105,6 +105,25 @@
     animation: animate 5s linear infinite;
 }
 
+.titletextforblog {
+    color: rgb(98, 206, 227);
+    /* 字间距 */
+    letter-spacing: 5px;
+    /* 转大写 */
+    line-height: 76px;
+    outline: none;
+    /* 自定义属性--c，可通过var函数对其调用 */
+    --c: lightseagreen;
+    /* 调用自定义属性--c，设置文字阴影（发光效果） */
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
+    /* 执行动画：动画名 时长 线性的 无限次播放 */
+    animation: animate 5s linear infinite;
+}
+
 .intro {
     color: rgb(98, 206, 227);
     /* 字间距 */
@@ -140,6 +159,20 @@
         0 0 160px var(--c);
 }
 
+.introtextforblog {
+    color: rgb(98, 206, 227);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 45px;
+    outline: none;
+    --c: lightseagreen;
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
+}
+
 /* 定义动画 */
 @keyframes animate {
     to {
@@ -148,13 +181,13 @@
     }
 }
 
-header {
+.headerE {
     position: relative;
     overflow: hidden;
     /* 隐藏溢出的内容 */
 }
 
-header>* {
+.headerE>* {
     /* 选择 header 的直接子元素 */
     position: relative;
     /* 保证子元素定位的参考点 */
@@ -164,7 +197,7 @@ header>* {
     /* 添加过渡效果 */
 }
 
-header:hover>* {
+.headerE:hover>* {
     top: 0;
     /* 鼠标悬停时恢复原位 */
 }
@@ -181,4 +214,34 @@ header:hover>* {
 .blogCard {
     display: grid;
     grid-template-areas: "a a a b";
+}
+
+.blogSearchBar {
+    color: rgb(98, 206, 227);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    outline: none;
+    --c: lightseagreen;
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
+}
+
+.blogSearchBar::placeholder {
+    color: rgb(98, 206, 227);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    outline: none;
+    --c: lightseagreen;
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
 }
