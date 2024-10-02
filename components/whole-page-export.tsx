@@ -1,6 +1,7 @@
 import { ReactNode, useState } from "react";
 import { Background } from "./background-video";
 import { Header } from "./header";
+import React from "react";
 
 export function Page({ showVideo, showBgPictures, children, hoverVisible }: { showVideo: boolean, showBgPictures: boolean, children: ReactNode, hoverVisible: boolean }) {
     const [isMute, setIsMute] = useState(true);

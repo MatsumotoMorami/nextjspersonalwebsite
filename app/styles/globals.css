@@ -25,8 +25,8 @@
 
 @keyframes headerTextColorAnimation {
     100% {
-        color: rgb(240, 240, 240);
-        text-shadow: 1px 1px 1px rgb(61, 61, 61)
+        color: rgb(65, 100, 148);
+        text-shadow: 1px 1px 1px rgb(61, 61, 61), -1px -1px 1px rgb(240, 240, 240);
     }
 }
 
@@ -55,7 +55,15 @@
 }
 
 .Header-extra:hover {
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 3px 3px 3px rgb(14, 81, 94), -3px -3px 3px rgb(127, 232, 253);
+}
+
+.sb-extra:focus {
+    box-shadow: 3px 3px 3px rgb(14, 81, 94), -3px -3px 3px rgb(107, 230, 255);
+}
+
+.card-extra:hover {
+    box-shadow: 3px 3px 3px rgb(17, 103, 120), -3px -3px 3px rgb(101, 181, 197);
 }
 
 .container {
@@ -70,7 +78,7 @@
     /* 转大写 */
     text-transform: uppercase;
     text-align: center;
-    line-height: 76px;
+    line-height: 85px;
     outline: none;
     /* 自定义属性--c，可通过var函数对其调用 */
     --c: lightseagreen;
@@ -110,7 +118,8 @@
     /* 字间距 */
     letter-spacing: 5px;
     /* 转大写 */
-    line-height: 76px;
+    line-height: 30px;
+    text-align: center;
     outline: none;
     /* 自定义属性--c，可通过var函数对其调用 */
     --c: lightseagreen;
@@ -131,7 +140,7 @@
     /* 转大写 */
     text-transform: uppercase;
     text-align: center;
-    line-height: 76px;
+    line-height: 15px;
     outline: none;
     /* 自定义属性--c，可通过var函数对其调用 */
     --c: lightseagreen;
@@ -160,7 +169,13 @@
 }
 
 .introtextforblog {
-    color: rgb(98, 206, 227);
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.introtextforsearchbar {
+    color: rgb(53, 120, 133);
     letter-spacing: 5px;
     text-transform: uppercase;
     line-height: 45px;
@@ -216,32 +231,40 @@
     grid-template-areas: "a a a b";
 }
 
-.blogSearchBar {
-    color: rgb(98, 206, 227);
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 45px;
-    outline: none;
-    --c: lightseagreen;
-    text-shadow: 0 0 10px var(--c),
-        0 0 20px var(--c),
-        0 0 40px var(--c),
-        0 0 80px var(--c),
-        0 0 160px var(--c);
+.searchbar {
+    background: rgb(195, 208, 255);
+    box-shadow: -3px -3px 3px rgb(221, 228, 255), 3px 3px 3px rgb(163, 183, 255);
 }
 
-.blogSearchBar::placeholder {
-    color: rgb(98, 206, 227);
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 45px;
-    outline: none;
-    --c: lightseagreen;
-    text-shadow: 0 0 10px var(--c),
-        0 0 20px var(--c),
-        0 0 40px var(--c),
-        0 0 80px var(--c),
-        0 0 160px var(--c);
+.cardbackground {
+    background: rgb(198, 210, 255);
+}
+
+.blogcard {
+    background: rgba(198, 210, 255, 0.5);
+}
+
+.blogcard3 {
+    animation: hoverchange 0.3s both alternate ease;
+}
+
+@keyframes hoverchange {
+    100% {
+        box-shadow: 3px 3px 3px rgb(25, 105, 121), -3px -3px 3px rgb(53, 160, 181);
+    }
+}
+
+.blc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+}
+
+.articlecard {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.bloglisttitle {
+    line-height: 50px;
 }
