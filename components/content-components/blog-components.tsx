@@ -1,6 +1,5 @@
 import { usePathname } from "next/navigation";
 import { ReactNode, useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
 
 export default function BlogComponentSet() {
 
@@ -75,7 +74,7 @@ export default function BlogComponentSet() {
                 onChange={handleSearchChange}></input>
             <ul>
                 {filterData.map(item => path.includes(item.type[0]) && (
-                    <ArticleCard key={uuidv4()}
+                    <ArticleCard key={item.id}
                         imageSrc={item.imageSrc}
                         title={item.title}
                         description={item.description.length < 150 ? item.description : item.description.slice(0, 150) + '...'}
