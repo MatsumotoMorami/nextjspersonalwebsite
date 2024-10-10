@@ -13,7 +13,7 @@ function NavigatorText({ text, path, hoverVisible }: { text: string, path: strin
 
 function NavigatorIcon({ svg, onClick }: { svg: ReactNode, onClick: MouseEventHandler<HTMLDivElement> }) {
     return (
-        <div className="cursor-pointer hover:text-white pr-2" onClick={onClick}>
+        <div className="cursor-pointer hover:text-white duration-200 pr-2" onClick={onClick}>
             {svg}
         </div>
     );
