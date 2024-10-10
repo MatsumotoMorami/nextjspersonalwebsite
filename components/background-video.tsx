@@ -1,9 +1,4 @@
 export function Background({ isMute, visible }: { isMute: boolean, visible: string }) {
-    // function getRandomInt(min: number, max: number): number {
-    //     const minCeiled = Math.ceil(min);
-    //     const maxFloored = Math.floor(max);
-    //     return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
-    // }
     return (
         <div className="absolute top-0 w-[100vw] h-full ">
             {visible == "v" ? <video
