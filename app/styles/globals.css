@@ -288,13 +288,13 @@
 .about2 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .about3 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 4fr 1fr;
 }
 
 .about4 {
@@ -304,10 +304,33 @@
 }
 
 .abouttitle {
-    letter-spacing: 5px;
-    text-shadow: 3px 3px 3px rgb(14, 81, 94), -3px -3px -3px rgb(181, 239, 255);
+    letter-spacing: 10px;
 }
 
 .aboutintro {
-    box-shadow: 3px 3px 3px rgb(181, 239, 255), -3px -3px 3px rgb(14, 81, 94);
+    color: rgb(98, 206, 227);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    outline: none;
+    --c: lightseagreen;
+    text-shadow: 0 0 10px var(--c),
+        0 0 20px var(--c),
+        0 0 40px var(--c),
+        0 0 80px var(--c),
+        0 0 160px var(--c);
+}
+
+.contactme {
+    line-height: 30px;
+}
+
+.contactcard {
+    letter-spacing: 5px;
+}
+
+.aboutpepe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
