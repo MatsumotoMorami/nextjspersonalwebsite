@@ -44,7 +44,7 @@ export default function AboutComponentSet() {
 
 function Card({ title, content, icon, path, onClick }: { title: string, content: string | ReactNode, icon: ReactNode, path: string | undefined, onClick: MouseEventHandler<HTMLAnchorElement> }) {
     return (
-        <a href={path} onClick={onClick} className="rounded-3xl bg-blue-200 bg-opacity-30 p-[2vw] relative contactcard m-[2vh] hover:shadow-lg duration-300">
+        <a href={path} onClick={onClick} className="fontGlobal rounded-3xl bg-blue-200 bg-opacity-30 p-[2vw] relative contactcard m-[2vh] hover:shadow-lg duration-300">
             <div className="absolute top-[2vw] text-emerald-800">{title}</div>
             <div className="absolute bottom-[2vw] text-emerald-700 text-lg">{content}</div>
             <div className="absolute right-[2vw]">{icon}</div>

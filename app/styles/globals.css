@@ -325,7 +325,7 @@
 }
 
 .contactcard {
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .aboutpepe {
@@ -333,4 +333,13 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
+}
+
+@font-face {
+    font-family: 'global';
+    src: url('/fonts/ZCOOLKuaiLe-Regular.ttf');
+}
+
+.fontGlobal {
+    font-family: 'global', sans-serif;
 }

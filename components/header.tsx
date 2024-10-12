@@ -5,7 +5,7 @@ function NavigatorText({ text, path, hoverVisible }: { text: string, path: strin
     return (
         <a href={path}>
             <header className="flex flex-row text-gray-800 items-center lg:p-2 p-0 w-full">
-                <div className="font-bold cursor-pointer lg:text-[1rem] md:text-sm text-[0.6rem] headerTextAnimation">{text}</div>
+                <div className="font-bold cursor-pointer lg:text-[1rem] md:text-sm text-[0.6rem] headerTextAnimation fontGlobal">{text}</div>
             </header>
         </a>
     );
@@ -26,14 +26,13 @@ export function Header({ setIsMute, isMute, haveVolumeControl, hoverVisible }: {
                 ? "fixed cardbackground top-3 flex flex-row md:h-16 h-12 duration-300 text-gray-800 items-center md:p-4 p-3 w-[96%] mx-[2%] rounded-3xl Header-extra opacity-0 hover:opacity-50 headerE"
                 : "fixed cardbackground top-3 flex flex-row md:h-16 h-12 duration-300 text-gray-800 items-center md:p-4 p-3 w-[96%] mx-[2%] rounded-3xl Header-extra opacity-50"}>
                 <div className="flex items-center md:p-3 sm:p-2 p-1">
-                    <div className="font-bold lg:p-3 sm:p-1.5 p-0 lg:text-2xl md:text-lg sm:text-sm text-[0rem] text-gray-800 duration-100">Morami</div>
+                    <div className="fontGlobal font-bold lg:p-3 sm:p-1.5 p-0 lg:text-2xl md:text-lg sm:text-sm text-[0rem] text-gray-800 duration-100">Morami</div>
                 </div>
                 <div className="ml-auto flex space-x-4 place-items-center">
                     <NavigatorText text="首页" path='/' hoverVisible={hoverVisible} />
                     <NavigatorText text="简介" path='/intro' hoverVisible={hoverVisible} />
                     <NavigatorText text="博客" path='/blog' hoverVisible={hoverVisible} />
                     <NavigatorText text="日志" path='/logs' hoverVisible={hoverVisible} />
-                    <NavigatorText text="仓库" path='/repo' hoverVisible={hoverVisible} />
                     <NavigatorText text="赞助" path='/donate' hoverVisible={hoverVisible} />
                     <NavigatorText text="关于" path='/about' hoverVisible={hoverVisible} />
                     <NavigatorIcon onClick={linkOnClick} svg={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="lg:size-5 size-3">

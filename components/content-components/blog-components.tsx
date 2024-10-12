@@ -68,7 +68,7 @@ export default function BlogComponentSet() {
     };
 
     return (
-        <div className="pt-32 mx-[15vw] absolute">
+        <div className="pt-32 mx-[15vw] absolute fontGlobal">
             <input placeholder="Search..."
                 className="w-[70vw] h-[5vw] px-3 focus:outline-none cardbackground rounded-3xl duration-300 sb-extra opacity-50 placeholder:text-gray-800 introtextforsearchbar text-center"
                 onChange={handleSearchChange}></input>
@@ -131,7 +131,7 @@ const icon = {
 
 export function BlogListComponentSet() {
     return (
-        <div className="grid grid-cols-2 grid-rows-2 w-[60vw] h-[60vh] mx-auto mt-[20vh]">
+        <div className="grid grid-cols-2 grid-rows-2 w-[60vw] h-[60vh] mx-auto mt-[20vh] fontGlobal">
             <BlogListCard title="笔记" svg={icon.notes} path="/blog/notes"></BlogListCard>
             <BlogListCard title="随笔" svg={icon.jottings} path="/blog/jottings"></BlogListCard>
             <BlogListCard title="日记" svg={icon.diarys} path="/blog/diarys"></BlogListCard>
