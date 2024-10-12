@@ -44,7 +44,7 @@ export default function AboutComponentSet() {
                         <div>asakurasayori@gmail.com</div>
                     </div>} icon={undefined}></Card>
                 </div>
-                <div className="aboutintro rounded-3xl mx-[1vw] p-[2vw] bg-blue-200 bg-opacity-30">这是Morami的个人站，用于存放个人负能与废话。当然也有项目、仓库和博客。服务器位于香港，由Morami自己独立完成前端后端，完全开源。</div>
+                <div className="aboutintro rounded-3xl mx-[1vw] p-[2vw] bg-blue-200 bg-opacity-30 fontGlobal">这是Morami的个人站，用于存放个人负能与废话。当然也有项目、仓库和博客。服务器位于香港，由Morami自己独立完成前端后端，完全开源。</div>
             </div>
         </div>
     )
