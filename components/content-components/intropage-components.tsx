@@ -3,7 +3,7 @@ import { ReactNode } from "react"
 
 export default function IntroPageComponentSet() {
     return (
-        <div className="fixed top-[50vh] left-[50vw] -translate-x-1/2 -translate-y-1/2 ipcs items-center">
+        <div className="fixed top-[50vh] left-[50vw] -translate-x-1/2 -translate-y-1/2 ipcs items-center fontGlobal">
             <LeftCard></LeftCard>
             <RightCard></RightCard>
         </div>

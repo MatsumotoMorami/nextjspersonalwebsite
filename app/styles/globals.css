@@ -340,6 +340,11 @@
     src: url('/fonts/ZCOOLKuaiLe-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'globalJP';
+    src: url('/fonts/ZenKurenaido-Regular.ttf');
+}
+
 .fontGlobal {
-    font-family: 'global', sans-serif;
+    font-family: 'global', 'globalJP';
 }

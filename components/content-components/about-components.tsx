@@ -1,8 +1,9 @@
 import { EventHandler, MouseEventHandler, ReactNode, useEffect, useState } from "react"
 
 export default function AboutComponentSet() {
-    let [notification, setNotification] = useState("")
-    let [pic, setPic] = useState("");
+    const [notification, setNotification] = useState("");
+    const [pic, setPic] = useState("");
+
     useEffect(() => {
         let timeoutId: string | number | NodeJS.Timeout | undefined;
         if (notification) {
@@ -11,17 +12,24 @@ export default function AboutComponentSet() {
             }, 2000);
         }
         return () => clearTimeout(timeoutId);
-    }, [notification])
+    }, [notification]);
+
     useEffect(() => {
-        let fileList = ["./pepe/1B1D7B063522098392D4B20BB7E424CB.jpg", "./pepe/3F99892F86ED7C7A16A2337ED4CFF746.jpg", "./pepe/996A457CC653ACE5A0787D541250C0FE.jpg", "./pepe/C8989F0FE8A4DF3C1001B48576A3089B.jpg"];
-        let randInt = Math.floor(Math.random() * fileList.length);
+        const fileList = [
+            "/pepe/1B1D7B063522098392D4B20BB7E424CB.jpg",
+            "/pepe/3F99892F86ED7C7A16A2337ED4CFF746.jpg",
+            "/pepe/996A457CC653ACE5A0787D541250C0FE.jpg",
+            "/pepe/C8989F0FE8A4DF3C1001B48576A3089B.jpg",
+        ];
+        const randInt = Math.floor(Math.random() * fileList.length);
         setPic(fileList[randInt]);
-    })
+    }, []);
+
     return (
         <div className="about1 w-[80vw] h-[70vh] mx-auto mt-[12vh]">
             <div className="about2 px-[3vw] py-[2vw]">
                 <span className="m-auto text-3xl abouttitle title">About</span>
-                <img src={pic} className="aboutpepe rounded-3xl opacity-70"></img>
+                <img src={pic} className="aboutpepe rounded-3xl opacity-70" alt="Pepe" />
             </div>
             <div className="about3 px-[3vw] py-[3vh]">
                 <div className="about4 pb-[4vh]">
