@@ -50,7 +50,7 @@ export default function LogComponentSet() {
         }
     ]
     return (
-        <div className="my-[20vh] rounded-3xl bg-opacity-50 bg-blue-200 w-[70vw] mx-auto logborde fontGlobal">
+        <div className="my-[20vh] rounded-3xl bg-opacity-50 bg-blue-200 w-[70vw] mx-auto logborder fontGlobal">
             {logs.map(log => (
                 <LogCard log={log} key={log.id}></LogCard>
             ))}

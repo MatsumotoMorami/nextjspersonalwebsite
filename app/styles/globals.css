@@ -276,7 +276,7 @@
 }
 
 .logborder>*:not(:last-child) {
-    border-bottom: solid rgba(0, 64, 93, 0.5) 3px;
+    border-bottom: solid rgba(0, 64, 93, 0.3) 2px;
 }
 
 .about1 {
